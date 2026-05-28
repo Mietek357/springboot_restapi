@@ -57,7 +57,7 @@ jobs:
             fi
             ls -la
             sudo apt install node npm -y
-            cd backend
+            cd springboot_restapi/backend
             mvn clean package
             sudo socker build --rm -t spring-mongodb-image -f Dockerfile .
             cd ..
