@@ -40,7 +40,6 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             ls -lah
-            
             mkdir -p ~/.ssh
             ssh-keyscan -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
             chmod 700 ~/.ssh
